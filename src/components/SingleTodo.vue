@@ -49,6 +49,7 @@ export default {
 }
 .edit-icon-fix {
   color: #497fba;
+  margin-left: 20px;
 }
 .delete-icon-fix {
   color: #aa414c;
