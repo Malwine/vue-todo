@@ -8,7 +8,9 @@
       </div>
     </div>
     <div class="row">
-      <p>Add create form</p>
+      <div class="col-12 col-lg-12">
+        <NewTodo @on-addtodo="addTodo($event)"/>
+      </div>
     </div>
     <div class="row">
       <div class="col-12 col-lg-6">
@@ -28,10 +30,12 @@
 </template>
 
 <script>
-import SingleTodo from "./SingleTodo.vue"
+import SingleTodo from "./SingleTodo.vue";
+import NewTodo from "./NewTodo";
 export default {
   components: {
     SingleTodo,
+    NewTodo,
   },
   data() {
     return {
