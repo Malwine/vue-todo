@@ -16,7 +16,11 @@
           <SingleTodo v-for="(todo, index) in todos" 
           :key="index" 
           :text="todo.text"
-          :completed="todo.completed"/>
+          :completed="todo.completed"
+          @on-delete="deleteTodo(todo)"
+          @on-toggle="toggleTodo(todo)"
+          @on-edit="editTodo(todo,$event)"
+          />
         </ul>
       </div>
     </div>
