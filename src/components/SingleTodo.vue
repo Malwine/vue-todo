@@ -8,8 +8,8 @@
     <form v-else @submit.prevent="endEditing()" class="flex-grow-1">
       <input @blur="startEditing()" v-model="newTodoText" type="text" class="form-control">
     </form>
-    <button @click="startEditing()" class="btn btn-outline-primary">Edit</button>
-    <button @click="$emit('on-delete')" class="btn btn-outline-danger">Delete</button>
+    <i @click="startEditing()" class="fas fa-edit edit-icon-fix"></i>
+    <i @click="$emit('on-delete')" class="fas fa-trash-alt delete-icon-fix"></i>
   </li>
 </template>
 
@@ -46,5 +46,12 @@ export default {
 <style scoped>
 .completed {
   text-decoration: line-through;
+}
+.edit-icon-fix {
+  color: #497fba;
+}
+.delete-icon-fix {
+  color: #aa414c;
+  margin-left: 10px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <form @submit.prevent="addTodo()" class="col-12 col-lg-6">
+  <form @submit.prevent="addTodo()" class="col-12 col-lg-6 form-fix">
     <input v-model="newTodo" placeholder="Enter todo" type="text" class="form-control">
   </form>
 
@@ -23,5 +23,9 @@ export default {
 }
 </script>
 
-<style>
+<style scope>
+.form-fix {
+  padding-left: 0px;
+  margin-bottom: 20px;
+}
 </style>

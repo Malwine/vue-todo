@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div class="container container-fix">
     <div class="row">
       <div class="col-12">
-        <p class="display-3">
+        <p class="display-4">
           Vue Todos
         </p>
       </div>
@@ -65,4 +65,7 @@ export default {
 </script>
 
 <style>
+.container-fix {
+  margin-top: 50px;
+}
 </style>
